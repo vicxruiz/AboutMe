@@ -9,14 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
+    
+    @IBAction func IntroduceYourselfButtonPressed(_ sender: Any) {
+        nameLabel.text = "Victor Ruiz"
+        nameLabel.alpha = 1
+        hobbiesLabel.text = "Play basketball"
+        
+        hobbiesLabel.alpha = 1
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("My name is Victor")
-        print("hello")
-        print("updated ui")
     }
+    
+    
+    
+    
+    
 
 
 }
